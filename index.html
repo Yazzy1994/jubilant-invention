@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="short cut icon" href="logo.png"/>
+    <title>Community Code</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav class ="desk">
+    <ul class="navbar">
+      <li><a href="#about-us">About us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#developers">Developers</a></li>
+      <li><a href="news.html#news">News</a></li>
+    </ul>
+  </nav>
+
+  <nav class ="mob">
+    <div class="hamburger-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+      <ul class="navbar">
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#developers">Developers</a></li>
+        <li><a href="#news.html">News</a></li>
+      </ul>
+  </nav>
+    <header>
+
+        <div class="text">
+            <h1 class="title">Community Code</h1>
+            <h3 class="subtitle">Design, Development, Marketing</h3>
+          </div>
+
+        <div class="sesgoabottom"></div>
+    </header>
+    <main>
+        <section class="about" id="about-us">
+            <div class="container">
+                <h2 class="about-us">About Us</h2>
+                <h3 class="slogan">I Got 99 Problems, But Writing Code Ain’t One</h3>
+                <p class="parra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dicta rem hic totam necessitatibus
+                    tempora animi error perferendis. Vero corrupti porro quia! Ad saepe alias, officiis voluptatem sed, odio
+                    dolores neque dolorem placeat nam quia numquam soluta ipsam nostrum consequuntur, a magnam non. Tenetur
+                    repudiandae distinctio inventore voluptate fugit laborum?</p>
+                <p class="parra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dicta rem hic totam necessitatibus
+                    tempora animi error perferendis. Vero corrupti porro quia! Ad saepe alias, officiis voluptatem sed, odio
+                    dolores neque dolorem placeat nam quia numquam soluta ipsam nostrum consequuntur, a magnam non. Tenetur
+                    repudiandae distinctio inventore voluptate fugit laborum?</p>
+                <a href="#contact" class="bottom">Contact Us</a>
+            </div>
+        </section>
+        <section class="gallery">
+           <!--  <div class="sesgoarriba"></div> -->
+            <div class="images none">
+                <img src="1.jpg" alt="">
+            </div>
+            <div class="images">
+                <img src="3.jpeg" alt="">
+            </div>
+            <div class="images">
+                <img src="2.jpg" alt="">
+                <div class="above-text">
+                    <!-- <img src="logo.png">
+                    <div></div> -->
+                </div>
+            </div>
+            <div class="images">
+                <img src="4.jpeg" alt="">
+
+            </div>
+            <div class="images none">
+                <img src="5.jpeg" alt="">
+            </div>
+          <!--   <div class="sesgoabottom"></div> -->
+        </section>
+        <section class="members" id="developers">
+            <div class="container">
+                <h2 class="about-us">Our Team! </h2>
+                <h3 class="slogan">Get to know our team</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="logo.png" alt="">
+                        <h4>Yasnia Deras Cruz</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <a href="yazzy.html" class="bottom-read">Read more</a>
+                    </div>
+                    <div class="card">
+                        <img src="logo.png" alt="">
+                        <h4>Community Code</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <a href="#" class="bottom-read">Read more</a>
+                    </div>
+                    <div class="card">
+                        <img src="logo.png" alt="">
+                        <h4>Community Code</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <a href="#" class="bottom-read">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="base">
+          <!--   <div class="sesgoarriba"></div> -->
+           <div class = "slide-container">
+
+                <div class=miSlider fade>
+                    <img src="img/img1.jpg">
+                </div>
+
+                <div class=miSlider fade>
+                    <img src="img/img2.jpg">
+                </div>
+
+
+                <div class=miSlider fade>
+                    <img src="img/img3.jpg">
+                </div>
+
+                 <div class="direction">
+                    <a href="#" class="atras" onclick="forwardSlide(-1)">&#10094;</a>
+                    <a href="#" class="adelante" onclick="forwardSlide(1)">&#10095;</a>
+                 </div>
+
+                 <div class="counters">
+                    <span class="counter active" onclick="posicionSlide(1)"></span>
+                    <span class="counter" onclick="posicionSlide(2)"></span>
+                    <span class="counter" onclick="posicionSlide(2)"></span>
+                 </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container" id="contact">
+            <h2 class="title-footer">Contact Us</h2>
+            <h3 class="sub-footer">We are here to provide with more information and answer any questions you have!</h3>
+            <!-- <p id="sendPrompt"></p> -->
+            <div class="footer">
+                <form  id="prospects_form"action="" method="post">
+                    <input type="text" name="" id="name" placeholder="Name">
+                    <p id="namePrompt"></p>
+                    <input type="text" name="" id="email" placeholder="Email">
+                    <p id="emailPrompt"></p>
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                    <input onclick="validateForm()" type="submit" value="Send" id="send"><p id="submitPrompt"></p>
+                    <p id="textPrompt"></p>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
