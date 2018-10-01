@@ -54,7 +54,7 @@ nav.desk a:hover {
 header {
     width: 100%;
     height: 650px;
-    background-image: url(imga.jpeg);
+    background-image: url(img/imga.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
