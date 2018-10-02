@@ -237,14 +237,22 @@ header .bottom {
     padding: 20px;
     box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
 }
-
+#portfolio .card{
+  width: 300px;
+  height: auto;
+  margin: 10px 0;
+}
 .cards img {
     width: 140px;
     height: 140px;
     object-fit: cover;
     border-radius: 100%;
 }
-
+#portfolio .cards img{
+  width: 250px;
+  height: auto;
+  border-radius: 0%;
+}
 .card .bottom-read{
     display: inline-block;
     padding: 6px;
