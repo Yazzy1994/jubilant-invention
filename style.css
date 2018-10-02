@@ -523,7 +523,7 @@ input[type="submit"] {
  	 	display: none;
  	 }
 
-    nav.mob,
+    nav.mob, 
  	 .hamburger-btn{
  	 	display: block;
  	 }
