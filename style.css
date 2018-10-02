@@ -11,6 +11,21 @@
 body {
 
 }
+button {
+    display: inline-block;
+    padding: 6px;
+    width: 120px;
+    font-weight: 300;
+    border: 1px solid rgba(24, 16, 16, .7);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin: 5% 0 0 42%;
+    font-family: 'Playfair Display', serif;
+    opacity: .6;
+
+}
 
 .navbar {
   display: flex;
@@ -485,7 +500,9 @@ input[type="submit"] {
     background: rgba(37, 37, 33, .7);
     width: 96px;
 }
-
+#myMap {
+  height: 20vh;
+}
 /* Responsive */
 
 @media screen and (max-width:1024px) {

@@ -311,11 +311,18 @@ header .bottom {
     height: 10px;
 }
 #pernilla .box .skill{
-  border: 1px solid hotpink
+  border: 1px solid hotpink;
 }
 #pernilla .box .skill .level{
   background: hotpink;
 }
+
+#marcus .box .skill{
+    border: 1px solid rgb(110, 255, 105, 0.753)
+  }
+#marcus .box .skill .level{
+    background: rgba(110, 255, 105, 0.753);
+  }
 
 
 .base {
