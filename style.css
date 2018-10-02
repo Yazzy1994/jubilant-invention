@@ -268,6 +268,41 @@ header .bottom {
 
 }
 
+#lang, h2{
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  margin-top: 5px;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-family: 'Playfair Display', serif;
+}
+
+#json{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#js-owner {
+  margin: 20px 0;
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+
+}
+
+#css-owner {
+  margin: 20px 0;
+  width: 30%;
+
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+}
 
 
 .base {
@@ -523,7 +558,7 @@ input[type="submit"] {
  	 	display: none;
  	 }
 
-    nav.mob, 
+    nav.mob,
  	 .hamburger-btn{
  	 	display: block;
  	 }
