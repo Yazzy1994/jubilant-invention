@@ -311,7 +311,7 @@ header .bottom {
     height: 10px;
 }
 #pernilla .box .skill{
-  border: 1px solid hotpink
+  border: 1px solid hotpink;
 }
 #pernilla .box .skill .level{
   background: hotpink;
