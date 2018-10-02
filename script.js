@@ -201,21 +201,21 @@ function producePrompt(message, promptLocation, color) {
 // JSON GITHUB TRENDER
 
 fetch('https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc')
-	.then(response => response.json())
-	.then(data => {
+	.then(response => response.json()) //calling JSON
+	.then(data => { //reading JSON
 
- for(i = 0; i < 5; i++){
+ for(i = 0; i < 5; i++){ //for loop to read the JSON nodes.
 
-	 var container = data.items[i];
+	 var container = data.items[i]; //data is the first node. And making a copy of the node with the local variabel "container"
 
-	 var name = container.name;
+	 var name = container.name; //this takes data from the inside of node, this case is called name
 	 var stars = container.stargazers_count;
-	 var boss = container.owner.login;
+	 var boss = container.owner.login; // Same process, but here are we a deeper step inside the nodes.
 	 var link = container.owner.html_url;
 	 var link_git = container.html_url;
 
 	  $('#js-owner').append("<br>Owner: <a target=" + "'_blank'" + "href='" + link + "'>" + "<strong>" + boss + "</strong>" + "</a>" + "<br>Project: <a target=" + "'_blank'" + "href='" + link_git + "'>" + "<strong>" + name + "</strong>" + "</a>" + "<br>Stars: " + stars);
-
+    //I call the div with th id ="js-owner" and with the append method, the method will insert specified content at the end of the selected elements. In this case we make string with brackets and call the local variabels from inside the loop. 
  }
 
 });
