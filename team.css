@@ -300,9 +300,19 @@ header .bottom {
     width: 100%;
     height: 10px;
 }
+
+#yazzy .box .skill {
+  border: 1px solid #348fbaba;
+}
+
+#yazzy .box .skill .level {
+  background:  #348fbaba;
+}
+
 #pernilla .box .skill{
   border: 1px solid hotpink;
 }
+
 #pernilla .box .skill .level{
   background: hotpink;
 }
