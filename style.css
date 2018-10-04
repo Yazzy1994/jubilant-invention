@@ -281,7 +281,17 @@ header .bottom {
 
 }
 
-.lg, h2{
+.jslg, h2{
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  margin-top: 5px;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-family: 'Playfair Display', serif;
+}
+
+.csslg, h2 {
   font-size: 35px;
   font-weight: 300;
   margin-bottom: 32px;
@@ -608,6 +618,29 @@ input[type="submit"] {
 
     nav.mob a:hover {
   	color: #18191c;
+  }
+
+  .jslg, h2{
+    margin-bottom: -17%;
+    padding: 60px;
+
+  }
+
+  .csslg, h2 {
+    padding: 60px;
+  }
+
+  #js-owner {
+
+    width: 50%;
+
+
+
+  }
+
+  #css-owner {
+    width: 50%;
+
   }
 }
 
