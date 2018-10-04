@@ -66,6 +66,7 @@ $(document).ready(function() {
 					validateEmail();
 				});
 
+
 				$('#tele').keyup(() => {
 					validatePhone();
 				});
