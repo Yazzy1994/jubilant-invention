@@ -318,10 +318,10 @@ header .bottom {
 }
 
 #marcus .box .skill{
-    border: 1px solid rgb(110, 255, 105, 0.753)
+    border: 1px solid green;
   }
 #marcus .box .skill .level{
-    background: rgba(110, 255, 105, 0.753);
+    background: green;
   }
 
 
