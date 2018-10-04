@@ -1,43 +1,4 @@
-// slideshow code
-let indice = 1;
-showSlides(indice);
 
-function forwardSlide(n){
-	showSlides(indice+=n);
-}
-
-function posicionSlide(n){
-	showSlides(indice=n);
-}
-setInterval(function tiempo(){
-    showSlides(indice+=1);
-}, 2000);
-
-function showSlides(n){
-	let i;
-	let slides = document.getElementsByClassName("miSlider");
-	let barras = document.getElementsByClassName("counter");
-
-	if(n > slides.length){
-		indice = 1;
-	}
-
-	if(n < 1) {
-		indice = slides.length();
-	}
-
-	for(i = 0; i < slides.length; i++){
-		slides[i].style.display ='none';
-	}
-
-	for(i = 0; i < barras.length; i++){
-      barras[i].className = barras[i].className.replace(" active", "");
-	}
-
-	slides[indice-1].style.display = 'block';
-	barras[indice-1].className += ' active';
-
-}
 
 // Validate code
 
@@ -269,4 +230,46 @@ $(document).ready(function(){
 			var div = $("div");
 				div.animate({opacity: '2.5'}, "slow");
 		});
+
 });
+
+// slideshow code
+let indice = 1;
+showSlides(indice);
+
+function forwardSlide(n){
+	showSlides(indice+=n);
+}
+
+function posicionSlide(n){
+	showSlides(indice=n);
+}
+setInterval(function tiempo(){
+    showSlides(indice+=1);
+}, 2000);
+
+function showSlides(n){
+	let i;
+	let slides = document.getElementsByClassName("miSlider");
+	let barras = document.getElementsByClassName("counter");
+
+	if(n > slides.length){
+		indice = 1;
+	}
+
+	if(n < 1) {
+		indice = slides.length();
+	}
+
+	for(i = 0; i < slides.length; i++){
+		slides[i].style.display ='none';
+	}
+
+	for(i = 0; i < barras.length; i++){
+      barras[i].className = barras[i].className.replace(" active", "");
+	}
+
+	slides[indice-1].style.display = 'block';
+	barras[indice-1].className += ' active';
+
+}
