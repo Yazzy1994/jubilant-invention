@@ -1,4 +1,4 @@
-// slidershow code
+// slideshow code
 let indice = 1;
 showSlides(indice);
 
