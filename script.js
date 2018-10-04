@@ -1,5 +1,4 @@
 
-
 // Validate code
 
 $(document).ready(function() {
