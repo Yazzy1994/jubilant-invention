@@ -241,10 +241,10 @@ fetch('https://api.github.com/search/repositories?q=language:css&sort=stars&orde
 $(document).ready(function(){
 		$("button").click(function(){
 				var div = $("div");
-				div.animate({width: '-=800px',}, "slow");
+				div.animate({opacity: '0.5',}, "slow");
 		});
 		$("button").click(function(){
 			var div = $("div");
-				div.animate({width: '1520px',}, "slow");
+				div.animate({opacity: '2.5'}, "slow");
 		});
 });
