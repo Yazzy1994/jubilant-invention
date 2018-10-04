@@ -66,6 +66,10 @@ $(document).ready(function() {
 					validateEmail();
 				});
 
+				$('#tele').keyup(() => {
+					validatePhone();
+				});
+
 				$('#textarea').keyup(() =>{
 					validateMessage();
 				});
@@ -131,6 +135,23 @@ function validateEmail() {
 }
 
 
+function validatePhone() {
+ var phone = document.getElementById('tele').value;
+
+			if(phone.length == 0) {
+				producePrompt('Phone is Required', 'phonePrompt', 'red' );
+				return false;
+			}
+			if(!phone.match(/^((((0{2}?)|(\+){1})46)|0)7[\d]{8}/)) {
+				producePrompt('Phone Invalid', 'phonePrompt', 'red');
+				return false;
+			} else {
+				producePrompt('Phone is Valid', 'phonePrompt', 'green');
+				return true;
+			}
+}
+
+
 /*
  * Required Characters = 30
  *
@@ -161,7 +182,7 @@ function validateEmail() {
 
  function validateForm() {
 
-	 if(!validateName() || !validateEmail()|| !validateMessage()) {
+	 if(!validateName() || !validateEmail() || !validateMessage() || !validatePhone()) {
 
 		 jsShow('submitPrompt');
 		 producePrompt('Form Must Be Valid To Be Send', 'submitPrompt', 'red');
@@ -215,7 +236,7 @@ fetch('https://api.github.com/search/repositories?q=language:javascript&sort=sta
 	 var link_git = container.html_url;
 
 	  $('#js-owner').append("<br>Owner: <a target=" + "'_blank'" + "href='" + link + "'>" + "<strong>" + boss + "</strong>" + "</a>" + "<br>Project: <a target=" + "'_blank'" + "href='" + link_git + "'>" + "<strong>" + name + "</strong>" + "</a>" + "<br>Stars: " + stars);
-    //I call the div with th id ="js-owner" and with the append method, the method will insert specified content at the end of the selected elements. In this case we make string with brackets and call the local variabels from inside the loop. 
+    //I call the div with th id ="js-owner" and with the append method, the method will insert specified content at the end of the selected elements. In this case we make string with brackets and call the local variabels from inside the loop.
  }
 
 });
