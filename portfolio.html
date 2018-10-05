@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="short cut icon" href="img/logo.png"/>
+    <link rel="stylesheet" href="img/logo.png"/>
     <title>Portfolio|| Community Code</title>
     <link rel="stylesheet" href="style.css">
 
@@ -44,7 +44,7 @@
             <h1 class="title">Portfolio</h1>
             <h3 class="subtitle">Here you will find a round up of our latest work </h3>
           </div>
-        <div class="sesgoabottom"/>
+        <div class="sesgoabottom"></div>
     </header>
     <main>
         <section class="portfolio">
@@ -104,7 +104,7 @@
           </section>
         </section>
         <section class="gallery">
-           <!--  <div class="sesgoarriba"></div> -->
+
             <div class="images none">
                 <img src="img/1.jpg" alt="">
             </div>
@@ -114,8 +114,7 @@
             <div class="images">
                 <img src="img/2.jpg" alt="">
                 <div class="above-text">
-                    <!-- <img src="logo.png">
-                    <div></div> -->
+
                 </div>
             </div>
             <div class="images">
@@ -125,24 +124,24 @@
             <div class="images none">
                 <img src="img/5.jpeg" alt="">
             </div>
-          <!--   <div class="sesgoabottom"></div> -->
+
         </section>
 
         <section class="base">
-          <!--   <div class="sesgoarriba"></div> -->
+
            <div class = "slide-container">
 
-                <div class=miSlider fade>
-                    <img src="slide/img1.jpg">
+                <div class=miSlider>
+                    <img src="slide/img1.jpg" alt="">
                 </div>
 
-                <div class=miSlider fade>
-                    <img src="slide/img2.jpg">
+                <div class=miSlider>
+                    <img src="slide/img2.jpg" alt="">
                 </div>
 
 
-                <div class=miSlider fade>
-                    <img src="slide/img3.jpg">
+                <div class=miSlider>
+                    <img src="slide/img3.jpg" alt="">
                 </div>
 
                  <div class="direction">
@@ -157,7 +156,7 @@
                  </div>
 
             </div>
-           <!--  <div class="sesgoabottom-unic"></div> -->
+
         </section>
     </main>
     <footer>
@@ -165,12 +164,14 @@
             <h2 class="title-footer">Contact Us</h2>
             <h3 class="sub-footer">We are here to provide with more information and answer any questions you have!</h3>
             <div class="footer">
-              <form  id="prospects_form"action="" method="post">
-                  <input type="text" name="" id="name" placeholder="Name">
+              <form  id="prospects_form" method="post">
+                  <input type="text"  id="name" placeholder="Name">
                   <p id="namePrompt"></p>
-                  <input type="text" name="" id="email" placeholder="Email">
+                  <input type="text"  id="email" placeholder="Email">
                   <p id="emailPrompt"></p>
-                  <textarea name="" id="textarea" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                  <input type="text" id="tele" placeholder="Phone">
+                  <p id="phonePrompt"></p>
+                  <textarea  id="textarea" cols="30" rows="10" placeholder="Write your message here..."></textarea>
                   <input onclick="validateForm()" type="submit" value="Send" id="send"><p id="submitPrompt"></p>
                   <p id="textPrompt"></p>
               </form>
