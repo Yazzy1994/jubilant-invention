@@ -107,36 +107,23 @@
             </div>
         </section>
         <section class="base">
+          <div class = "slide-container">
+            <div class="mySlide"><img src="slide/img1.jpg" alt="firstslide"></div>
+            <div class="mySlide" ><img src="slide/img2.jpg" alt="secondslide"></div>
+            <div class="mySlide"><img src="slide/img3.jpg" alt="thirdslide"></div>
 
-           <div class = "slide-container">
+          <div class="direction">
+            <span id="prev" onclick="forwardSlide(-1)">&#10094;</span>
+            <span id="next" onclick="forwardSlide(1)">&#10095;</span>
+          </div>
 
-                <div class=miSlider>
-                    <img src="slide/img1.jpg" alt="">
-                </div>
-
-                <div class=miSlider>
-                    <img src="slide/img2.jpg" alt="">
-                </div>
-
-
-                <div class=miSlider>
-                    <img src="slide/img3.jpg" alt="">
-                </div>
-
-                 <div class="direction">
-                    <span class="atras" onclick="forwardSlide(-1)">&#10094;</span>
-                    <span class="adelante" onclick="forwardSlide(1)">&#10095;</span>
-                 </div>
-
-                 <div class="counters">
-                    <span class="counter active" onclick="posicionSlide(1)"></span>
-                    <span class="counter" onclick="posicionSlide(2)"></span>
-                    <span class="counter" onclick="posicionSlide(2)"></span>
-                 </div>
-
-            </div>
-
-        </section>
+          <div class="counters">
+            <span class="counter active" onclick="posicionSlide(1)"></span>
+            <span class="counter" onclick="posicionSlide(2)"></span>
+            <span class="counter" onclick="posicionSlide(3)"></span>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
         <div class="container" id="contact">

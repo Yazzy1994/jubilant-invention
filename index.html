@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link  rel="logotype" href="img/logo.png">
     <title>Community Code</title>
-<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-=======
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
->>>>>>> 4c81d0aa77628714eb5a44a284c5ff129c53536a
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -112,37 +109,24 @@
                 </div>
             </div>
         </section>
-        <section class="base">
+       <section class="base">
+          <div class = "slide-container">
+            <div class="mySlide"><img src="slide/img1.jpg" alt="firstslide"></div>
+            <div class="mySlide" ><img src="slide/img2.jpg" alt="secondslide"></div>
+            <div class="mySlide"><img src="slide/img3.jpg" alt="thirdslide"></div>
 
-           <div class = "slide-container">
+          <div class="direction">
+            <span id="prev" onclick="forwardSlide(-1)">&#10094;</span>
+            <span id="next" onclick="forwardSlide(1)">&#10095;</span>
+          </div>
 
-                <div class=miSlider>
-                    <img src="slide/img1.jpg" alt="slideimg">
-                </div>
-
-                <div class=miSlider>
-                    <img src="slide/img2.jpg" alt="slideimg">
-                </div>
-
-
-                <div class=miSlider>
-                    <img src="slide/img3.jpg" alt="">
-                </div>
-
-                 <div class="direction">
-                   <span class="atras" onclick="forwardSlide(-1)">&#10094;</span>
-                   <span class="adelante" onclick="forwardSlide(1)">&#10095;</span>
-                 </div>
-
-                 <div class="counters">
-                    <span class="counter active" onclick="posicionSlide(1)"></span>
-                    <span class="counter" onclick="posicionSlide(2)"></span>
-                    <span class="counter" onclick="posicionSlide(2)"></span>
-                 </div>
-
-            </div>
-
-        </section>
+          <div class="counters">
+            <span class="counter active" onclick="posicionSlide(1)"></span>
+            <span class="counter" onclick="posicionSlide(2)"></span>
+            <span class="counter" onclick="posicionSlide(3)"></span>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
         <div class="container" id="contact">
@@ -164,14 +148,7 @@
             </div>
         </div>
     </footer>
-
-<<<<<<< HEAD
-    <script type="text/javascript" src="script.js"></script>
     <iframe name="easyXDM_rwgps_default3403_provider" id="easyXDM_rwgps_default3403_provider" src="https://ridewithgps.com/tunnel.html?xdm_e=https%3A%2F%2Fridewithgps.com%2Fhelp%2Fsharing-on-your-own-website&amp;xdm_c=default3403&amp;xdm_p=4" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe>
-=======
-    <script src="script.js"></script>
-
->>>>>>> 4c81d0aa77628714eb5a44a284c5ff129c53536a
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
